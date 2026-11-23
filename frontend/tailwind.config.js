@@ -1,0 +1,2 @@
+/** @type {import('tailwindcss').Config} */
+export default {content:['./index.html','./src/**/*.{ts,tsx}'],theme:{extend:{colors:{forest:'#153F34',deep:'#10362D',mint:'#EAF4ED',lime:'#DDF36A',cream:'#FAF9F5',ink:'#18362F',muted:'#75817B'},fontFamily:{sans:['DM Sans','sans-serif'],display:['Manrope','sans-serif']},boxShadow:{soft:'0 10px 35px rgba(22, 53, 42, .07)',float:'0 22px 60px rgba(22,53,42,.13)'}}},plugins:[]};
