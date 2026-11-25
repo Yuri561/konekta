@@ -1,0 +1,3 @@
+import type {ButtonHTMLAttributes,ReactNode} from 'react';
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement>{variant?:'primary'|'secondary'|'outline'|'white';children:ReactNode;}
+export function Button({variant='primary',className='',children,...props}:Props){const variants={primary:'bg-forest text-white hover:bg-deep',secondary:'bg-lime text-forest hover:bg-[#d1eb54]',outline:'border border-gray-200 bg-white text-forest hover:bg-mint',white:'bg-white text-forest hover:bg-gray-100'};return <button className={`inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-bold transition duration-200 disabled:opacity-50 ${variants[variant]} ${className}`} {...props}>{children}</button>}
